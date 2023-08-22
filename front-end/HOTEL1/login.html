@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/HOTEL1/css/login.css">
+    <link rel='stylesheet' type='text/css' href='/HOTEL1/css/login1.css'>
+</head>
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso nos campos abaixo</p>
+            <label for="email">E-mail</label>
+            <input required type="email" placeholder="Digite seu e-mail" id="login" autofocus="true" />
+            <label for="password">Senha</label>
+            <input required type="password" placeholder="Digite sua senha" id="senha"/>
+            <a href="/HOTEL1/esqueci.html">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="btn" onclick="logar(); return false">
+            <a class="click" href="/HOTEL1/cadastro.html">Cadastre-se clicando aqui</a>
+        </form>
+    </div>
+
+    <script>
+        function logar(){
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin@admin" && senha == "admin"){
+                location.href="/HOTEL1/indexlogado.html";
+            }
+            else{
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+    
+</body>

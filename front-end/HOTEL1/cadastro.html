@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/HOTEL1/css/login.css">
+    <link rel='stylesheet' type='text/css' href='/HOTEL1/css/login1.css'>
+</head>
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Cadastro</h1>
+            <p>Digite seus dados para cadastro nos campos abaixo</p>
+            <label for="email">E-mail*</label>
+            <input required type="email" placeholder="Digite um e-mail válido" autofocus="true" />
+
+            <label for="name">Nome*</label>
+            <input required type="name" placeholder="Digite seu nome completo" autofocus="true" />
+
+            <label for="cpf">CPF*</label>
+            <input required type="cpf" placeholder="Digite seu CPF (sem pontuação)" autofocus="true" />
+
+            <label for="password" title="*Deve conter 8 caracteres, letra maiúscula e minúscula">Senha*</label>
+            <input required type="password" placeholder="Digite uma senha"/>
+            <input required type="password" name="senhaC" id="senhaC" placeholder="Confirmar Senha">
+            <input type="submit" value="Confirmar" class="btn" />
+        </form>
+    </div>
+    
+</body>

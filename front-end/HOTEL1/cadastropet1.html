@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/HOTEL1/css/login.css">
+    <link rel='stylesheet' type='text/css' href='/HOTEL1/css/login1.css'>
+</head>
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Cadastro de pet</h1>
+            <p>Digite seus dados do seu pet nos campos abaixo</p>
+
+            <label for="name">Nome*</label>
+            <input required type="name" placeholder="Digite o nome do seu pet" autofocus="true" />
+            <label for="raca">Raça:</label>
+            <input required type="name" placeholder="Digite a raça do seu pet" autofocus="true" />
+            
+            <label for="porte">Porte*:</label>
+            <select class="porte" name="porte" required>
+              <option value="">Selecione o porte*:</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+
+            <label for="idade">Idade*:</label>
+            <input required type="idade" placeholder="Digite a idade de seu pet" autofocus="true" />
+
+            
+            <a href="/HOTEL1/disponibilidades.html"><input type="submit" value="Cadastrar" class="btn" /></a>
+        </form>
+    </div>
+    
+</body>
