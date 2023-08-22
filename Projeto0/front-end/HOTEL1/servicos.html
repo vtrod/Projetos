@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <link rel='stylesheet' type='text/css' href='/HOTEL1/css/index1.css'>
+        <link rel='stylesheet' type='text/css' href='/HOTEL1/css/footer.css'>
+        <link rel='stylesheet' type='text/css' href='/HOTEL1/css/servicos.css'>
+        <link rel="stylesheet" href="/HOTEL1/css/login.css">
+        <title> Serviços </title>
+    </head>
+        <body>
+
+            <!-- div do cabeçalho-->
+            <nav>
+                <div class="mprincipal">
+                        <div class="biscoito"><a href="/HOTEL1/index.html"><img class="biscoito" src="/images/biscoito.png"></a></div>
+                        <div class="logo"><div class="maior">&nbspBem-vindo  a House  Pet,</div><br> &nbsp um  hotel  bom  para  cachorro!</div>
+                        <div class="login">Olá Vitor!&nbsp&nbsp&nbsp&nbsp<img class="imguser" src="../images/user.png" onclick="toggleMenu()">
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                        <img src="../images/user.png" class="imguser">
+                                        <h4>Vitor Rodrigues</h4>   
+                                    </div>
+                                    <hr>
+
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="/images/user.png" class="imguser">
+                                        <p>Editar Perfil</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="/images/pata.png" class="imguser">
+                                        <p>Meus Pets</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="/HOTEL1/gestao.html" class="sub-menu-link">
+                                        <img src="/images/management.png" class="imguser">
+                                        <p>Gestão</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="/HOTEL1/index.html" class="sub-menu-link">
+                                        <img src="/images/logout.png" class="imguser">
+                                        <p>Sair</p>
+                                        <span>></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            
+
+                <!--iframe do menu -->
+                <iframe scrolling="no" src="/HOTEL1/menu.html" style="border:none;" title="menu" width="100%" height="70px"> </iframe>
+            </nav>
+
+            <!--div das hospedagens-->
+                <center>
+                    <main>
+                        <section class="servicos">
+                            <img class="img1" src="/images/adestrar.jpg">
+                            <center><h2>Adestramento</h2></center>
+                            <span style="text-align: justify;" id="descricao"> A House Pet oferece um serviço completo de adestramento para atender às necessidades 
+                                do seu animal de estimação, com especialistas em comportamento animal e treinadores certificados. Comprometidos em oferecer um serviço de adestramento de alta qualidade na 
+                                nossa clínica pet, visamos proporcionar uma vida melhor e mais feliz para você e seu pet. Agende uma consulta e conheça os benefícios do 
+                                adestramento pet!
+                            </span>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <section class="servicos">
+                            <img class="img1" src="/images/brenotomanhobanho.jpg">
+                            <center><h2>Banho e tosa</h2></center>
+                            <span style="text-align: justify;" id="descricao"> Oferecemos serviços completos de banho e tosa, cuidando da higiene e beleza do seu animal 
+                                de estimação. Nossa equipe garante um banho terapêutico e uma tosa profissional, adaptados às necessidades do seu pet. Proporcionamos 
+                                um ambiente seguro e confortável para que seu pet se sinta relaxado durante todo o processo. Agende um horário hoje mesmo! <br>*Os serviços podem ser contratados separadamente.
+                            </span>
+                        </section>
+                        <br>
+                        <center><br><button class="reserve"><a href="/HOTEL1/disponibilidades.html">&nbsp&nbspReserve Já!</a></button></center>
+                    </main>
+                </center>
+            <!--menu footer-->
+             <footer>
+                <div class="menu-inferior">
+                  <div class="contato">
+                    <span>Fale conosco: (--) 0123-4567</span><br>
+                    <span>E-mail: hotelhousepet@gmail.com</span><br>
+                    <span>HousePetCopyrights © 2023 - Todos os direitos reservados</span>
+                  </div>
+               
+              </footer>    
+        
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+    </body>
+</html>

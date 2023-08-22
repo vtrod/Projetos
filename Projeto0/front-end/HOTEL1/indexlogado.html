@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='/HOTEL1/css/index1.css'>
+        <link rel='stylesheet' type='text/css' href='/HOTEL1/css/footer.css'>
+        <title> Bem-vindo de volta! </title>
+    </head>
+        <body>
+
+            <!-- div do cabeçalho-->
+            <div class="mprincipal">
+                    <div class="biscoito"><a href="/HOTEL1/index.html"><img class="biscoito" src="/images/biscoito.png"></a></div>
+                    <div class="logo"><div class="maior">&nbspBem-vindo  a House  Pet,</div><br> &nbsp um  hotel  bom  para  cachorro!</div>
+                    <div class="login">Olá Vitor!&nbsp&nbsp&nbsp&nbsp<img class="imguser" src="../images/user.png" onclick="toggleMenu()">
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <div class="user-info">
+                                    <img src="../images/user.png" class="imguser">
+                                    <h4>Vitor Rodrigues</h4>   
+                                </div>
+                                <hr>
+
+                                <a href="#" class="sub-menu-link">
+                                    <img src="/images/user.png" class="imguser">
+                                    <p>Editar Perfil</p>
+                                    <span>></span>
+                                </a>
+                                <a href="#" class="sub-menu-link">
+                                    <img src="/images/pata.png" class="imguser">
+                                    <p>Meus Pets</p>
+                                    <span>></span>
+                                </a>
+                                <a href="/HOTEL1/gestao.html" class="sub-menu-link">
+                                    <img src="/images/management.png" class="imguser">
+                                    <p>Gestão</p>
+                                    <span>></span>
+                                </a>
+                                <a href="/HOTEL1/index.html" class="sub-menu-link">
+                                    <img src="/images/logout.png" class="imguser">
+                                    <p>Sair</p>
+                                    <span>></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!--iframe do menu -->
+            <iframe scrolling="no" src="/HOTEL1/menu.html" style="border:none;" title="menu" width="100%" height="70px"> </iframe>
+
+
+            <!--div das imagens-->
+            <div class="conteudoindex"></div>
+
+            <!--menu footer-->
+            <footer>
+                <div class="menu-inferior">
+                  <div class="contato">
+                    <span>Fale conosco: (--) 0123-4567</span><br>
+                    <span>E-mail: hotelhousepet@gmail.com</span>
+                  </div>
+                  <div class="direitos">
+                    <span>HousePetCopyrights © 2023 - Todos os direitos reservados</span>
+                  </div>
+                </div>
+              </footer>    
+        
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+    </body>
+</html>
